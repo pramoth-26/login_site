@@ -1,0 +1,19 @@
+PAGES :
+        Signup page
+        Signin Page 
+        Home page
+
+Step by process : 
+                  Signup the page after redirect to Signin page.
+                  if login is success go to home page and display the user Details.
+
+Technology :
+    Frontend --> React.js
+    Backend  --> Node.js
+    Database --> Mongodb
+
+Run Process : 
+
+    Client >  npm run dev
+    Server >  node index.js
+
