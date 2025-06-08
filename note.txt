@@ -4,6 +4,7 @@ PAGES :
         Home page
 
 Step by process : 
+                  Create named punditry Database in Mongodb
                   Signup the page after redirect to Signin page.
                   if login is success go to home page and display the user Details.
 
@@ -17,3 +18,19 @@ Run Process :
     Client >  npm run dev
     Server >  node index.js
 
+    Database Name > punditry
+    table Name > users
+
+Create only punditry Database in Mongodb after automatically Create users table.
+
+user table structure >
+
+CREATE TABLE users (
+  _id           ObjectId PRIMARY KEY,
+  name          VARCHAR(100),
+  username      VARCHAR(100) UNIQUE,
+  mobileno      VARCHAR(15),
+  email         VARCHAR(100) UNIQUE,
+  description   TEXT,
+  password      VARCHAR(255)
+);
